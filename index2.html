@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược ký tự</title>
+</head>
+<body>
+<script>
+    let arr = [1,2,"Ba",4,,"Năm",6,7,8,"chín"];
+    let first = 0;
+    let last = arr.length-1;
+    let tem;
+    while (first<last){
+        tem = arr[first];
+        arr[first] = arr[last];
+        arr[last] = tem ;
+        first++;
+        last--;
+    }
+    document.write(arr);
+</script>
+</body>
+</html>
